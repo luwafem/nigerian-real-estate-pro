@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-red-600/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -107,32 +107,6 @@ const Hero = () => {
             </div>
 
             {/* Quick Filters */}
-            <div className="mt-6 pt-6 border-t border-white/10">
-              <div className="flex items-center justify-between mb-3">
-                <p className="text-sm font-medium text-gray-300">Popular Searches:</p>
-                <div className="flex items-center gap-1 text-white text-xs font-medium">
-                  <span>All Nigeria</span>
-                  <ChevronDown className="w-3 h-3" />
-                </div>
-              </div>
-              
-              <div className="flex flex-wrap gap-2">
-                {quickFilters.map((filter, index) => (
-                  <motion.button
-                    key={filter.label}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.3 + (index * 0.05) }}
-                    className="group flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-gray-200 hover:bg-red-500/20 hover:border-red-500/50 hover:text-white transition-all duration-300"
-                  >
-                    <span className="text-gray-300 group-hover:text-white transition-colors">
-                      {filter.icon}
-                    </span>
-                    <span className="text-sm font-medium">{filter.label}</span>
-                  </motion.button>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           {/* Stats */}
