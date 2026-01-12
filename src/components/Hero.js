@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-red-600/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ const Hero = () => {
                 </button>
 
                 <button className="group/btn flex items-center gap-2 px-6 py-3.5 rounded-xl bg-red-600 text-white text-sm font-medium hover:bg-red-700 hover:shadow-xl transition-all duration-300">
-                  Search Properties
+                  Search
                   <ChevronRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                 </button>
               </div>
